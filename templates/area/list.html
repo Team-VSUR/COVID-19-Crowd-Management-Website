@@ -2,4 +2,11 @@
 {%block body_block%}
 <h1>List of Areas will be displayed here</h1>
 <h4>It will be imported from a Model which will store all the details</h4>
+{% for area in areas %}
+  <h4>{{area.name}}</h4>
+  <h6>{{area.zone}}</h6>
+  <hr color="grey">
+{%endfor%}
+
+
 {%endblock%}
