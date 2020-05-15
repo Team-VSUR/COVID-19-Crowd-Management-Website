@@ -4,5 +4,5 @@ from . import views
 from django.conf.urls import url,include
 
 urlpatterns=[
-    path('',views.list)
+    path('list',views.list,name='list')
 ]

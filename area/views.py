@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 def list(request):
     #list will be imported from a Model here
-    return render(request,'list.html')
+    return render(request,'area/list.html')

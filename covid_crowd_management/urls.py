@@ -21,6 +21,6 @@ from django.conf.urls import url,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home),
-    path('area/',include('area.urls')),
-    path('/emergency/',views.emergency)
+    path('emergency',views.emergency,name='emergency'),
+    path('area/',include('area.urls')), 
 ]
