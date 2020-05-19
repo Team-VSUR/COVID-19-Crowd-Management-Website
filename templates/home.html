@@ -1,7 +1,172 @@
 {% extends 'base.html'%}
 {%block body_block%}
+<style media="screen">
+*{
+     margin: 0;
+     padding: 0;
+     font-family: Century Gothic;
+}
 
-<h1>Welcome to the COVID Crowd Management Website</h1>
-<h4>This is an initiative to control crowds in Allahabad and avoid the community spread of the COVID 19.</h4>
+header{
+     height: 100vh;
+     background-size: cover;
+     backgroundposition-position: center;
+}
+
+ul{
+     float: right;
+     List-style-type: none;
+}
+
+ul li{
+     display: inline-block;
+}
+
+ul li a{
+     text-decoration: none;
+     color: #fff;
+     padding: 5px 20px;
+     border: 1px solid transparent;
+     transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img{
+    float: left;
+    width: 450px;
+    height: auto;
+}
+
+.main{
+     max-width: 1200px;
+     margin: auto;
+}
+
+.title{
+     position: absolute;
+     top: 25%;
+     left: 55%;
+     transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color: #fff;
+    font-size: 70px;
+}
+
+.initiative{
+     position: absolute;
+     top: 45%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+}
+
+.initiative h2{
+     color: #000;
+     font-size: 25px;
+}
+
+
+.initiative1{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+}
+
+.initiative1 h3{
+     color: #000;
+     font-size: 25px;
+}
+
+
+.initiative2{
+     position: absolute;
+     top: 65%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+}
+
+.initiative2 h4{
+     color: #000;
+     font-size: 25px;
+}
+
+
+.initiative3{
+     position: absolute;
+     top: 80%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+}
+
+.initiative3 h5{
+     color: #000;
+     font-size: 25px;
+}
+
+
+#social-media
+{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    padding: 100px 0;
+}
+#social-media p
+{
+     color: #000;
+     font-size: 30px;
+     font-weight 600;
+     margin-bottom: 30px;
+}
+.social-icons img
+{
+      display: block;
+      text-align: center;
+      width: 70px;
+      position: sticky;
+      transition: 0.5s;
+}
+.social-icons a:hover img
+{
+     transform: translateY(-10px);
+}
+</style>
+    <title>COVID CROWD MANAGEMENT</title>
+        <div class="title">
+            <h1>COVID CROWD MANAGEMENT</h1>
+        </div>
+        <div class="initiative">
+            <h2>This is an initiative to control crowds in Uttar Pradesh</h2>
+        </div>
+        <div class="initiative1">
+            <h3>and avoid the community spread of the COVID-19</h3>
+        </div>
+        <div class="initiative2">
+            <h4>‎Please head over to the LOGIN page to register for token generation</h4>
+        </div>
+        <div class="initiative3">
+            <h5>Go to the AREAS page to see the list of zones</h5>
+        </div>
+        <section id="social-media">
+        <div class="container" text-center>
+        <p>COVID-19 UPDATES</p>
+             <div class="social-icons">
+             <a href="#"><img src="twitter.png"></a>
+             <a href="#"><img src="instagram.png"></a>
+             <a href="#"><img src="facebook.png"></a>
+             </div>
+        </div>
 
 {%endblock%}
